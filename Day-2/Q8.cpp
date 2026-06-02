@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//program to Check whether a number is palindrome
 int main() {
     long long number;
     cout << "Enter a number: ";

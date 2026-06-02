@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+//program to Find sum of digits of a number
 int main()
 {
     int n;

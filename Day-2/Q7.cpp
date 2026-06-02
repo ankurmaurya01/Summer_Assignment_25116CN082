@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+//program to Find product of digits
 int main() {
     int n;
     cout << "Enter a Number: ";
