@@ -1,32 +1,23 @@
 #include <iostream>
 using namespace std;
-//program to Check whether a number is palindrome
+// Program to check whether a number is a palindrome
+
 int main() {
-    long long number;
+    int num;
     cout << "Enter a number: ";
-    if (!(cin >> number)) {
-        cerr << "Invalid input\n";
-        return 1;
+    cin >> num;
+
+    int org = num;
+    int rev = 0;
+    while (num > 0) {
+        int digit = num % 10;
+        rev = rev * 10 + digit;
+        num /= 10;
     }
-
-    long long original = number;
-    long long reversed = 0;
-    long long temp = (number < 0) ? -number : number;
-
-    while (temp > 0) {
-        int digit = temp % 10;
-        reversed = reversed * 10 + digit;
-        temp /= 10;
-    }
-
-    if (number < 0) {
-        reversed = -reversed;
-    }
-
-    if (original == reversed) {
-        cout << original << " is a palindrome number.\n";
+    if (org == rev) {
+        cout << org << " is a palindrome number." << endl;
     } else {
-        cout << original << " is not a palindrome number.\n";
+        cout << org << " is not a palindrome number." << endl;
     }
 
     return 0;
