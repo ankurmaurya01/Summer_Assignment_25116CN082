@@ -11,10 +11,8 @@ int main() {
     cout << "Prime numbers between " << s<< " and " << e << " are: ";
 
     for (int n = s; n <= e; n++) {
-        if (n <= 1) continue;   // skip numbers less than or equal to 1
+        if (n <= 1) continue; =
         bool isPrime = true;
-
-        // check divisibility
         for (int i = 2; i < n; i++) {
             if (n % i == 0) {
                 isPrime = false;
